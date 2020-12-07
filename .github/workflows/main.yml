@@ -2,11 +2,11 @@
 
 name: Deploy on Surge
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ master ]
+    branches: [master]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -22,18 +22,22 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      
+
       - name: Setup Node.js environment
         uses: actions/setup-node@v2-beta
         with:
           version: 12
+
       - name: GitHub Action for Yarn
         uses: Borales/actions-yarn@v2.3.0
         with:
           cmd: install
+
       - name: Build Yarn
         run: yarn build
-      - name: Install Surge 
+
+      - name: Install Surge
         run: npm install --global surge
+
       - name: Deploy on Surge
         run: surge ./build http://saifullahamin_shoesstore.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
