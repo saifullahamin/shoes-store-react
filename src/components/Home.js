@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
   },
   corousal: {
     marginTop: 2,
-    paddingTop: 20,
+    paddingTop: 50,
     paddingBottom: 20,
     borderBottom: "3px solid rgb(235, 235, 224)",
     backgroundColor: "rgb(252, 252, 252)",
@@ -39,6 +39,9 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 900,
     fontSize: 20,
   },
+  list: {
+    listStyleType: "none",
+  },
 }));
 
 const Home = (props) => {
@@ -50,7 +53,7 @@ const Home = (props) => {
       <Carousel className={classes.corousal}>
         {Object.entries(data).map(([productID, { name, img }]) => {
           return (
-            <li key={productID}>
+            <li key={productID} className={classes.list}>
               <Grid container spacing={3}>
                 <Grid item xs={12} sm={4}>
                   <Paper className={classes.paper}>
