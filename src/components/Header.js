@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
     color: "rgb(0,0,0)",
     fontSize: 35,
     fontStyle: "italic",
+    paddingTop: 7,
   },
   button: {
     color: "rgb(0,0,0)",
