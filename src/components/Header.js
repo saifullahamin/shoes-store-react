@@ -14,10 +14,11 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   title: {
-    fontFamily: "'Dancing Script', cursive",
+    fontFamily: "'Sacramento', cursive",
     flexGrow: 1,
     color: "rgb(0,0,0)",
-    fontSize: 27,
+    fontSize: 35,
+    fontStyle: "italic",
   },
   button: {
     color: "rgb(0,0,0)",
@@ -35,7 +36,11 @@ export default function Header() {
   const classes = useStyles();
   const navigate = useNavigate();
   const { items } = useContext(CartContext);
-
+  const cartItems = () => {
+    if (items.length > 0) {
+      return items.length;
+    }
+  };
   return (
     <div className={classes.root}>
       <AppBar position="static" className={classes.appBar}>
@@ -54,7 +59,7 @@ export default function Header() {
           </Button>
 
           <Button className={classes.button} onClick={() => navigate("cart")}>
-            <ShoppingCartOutlinedIcon /> <span>{items.length}</span>
+            <ShoppingCartOutlinedIcon /> <span>{cartItems()}</span>
           </Button>
         </Toolbar>
       </AppBar>
