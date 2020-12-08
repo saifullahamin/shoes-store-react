@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     color: "rgb(0,0,0)",
-    padding: "10px 40px",
+    padding: "10px 30px",
     fontSize: 15,
     fontWeight: 400,
   },
