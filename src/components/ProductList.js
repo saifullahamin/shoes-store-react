@@ -6,7 +6,7 @@ import { CartContext } from "../CartContext";
 const ProductList = () => {
   const data = useContext(dataContext);
 
-  const { addItem, items, increaseItem } = useContext(CartContext);
+  const { addItem, items } = useContext(CartContext);
 
   const handleAddition = (event) => {
     if (!items.find((item) => item.productID === event.target.value)) {
