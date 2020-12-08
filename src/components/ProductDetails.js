@@ -9,8 +9,6 @@ const ProductDetails = () => {
   const { addItem, items } = useContext(CartContext);
 
   const handleAddition = (event) => {
-    document.getElementById(event.target.value).innerHTML = "Added";
-
     if (!items.find((item) => item.productID === event.target.value)) {
       const productObj = {
         productID: event.target.value,
@@ -33,7 +31,7 @@ const ProductDetails = () => {
         src={data[productID].img}
         alt={productID}
       ></img>
-      <button onClick={handleAddition} value={productID} id={productID}>
+      <button onClick={handleAddition} value={productID}>
         Add to Cart
       </button>
       <p>{data[productID].detail}</p>

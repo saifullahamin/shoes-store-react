@@ -4,13 +4,13 @@ const CartReducer = (state, action) => {
       return [...state, action.payload];
     }
     case "DELETE": {
+      let array = [];
       for (let i = 0; i < state.length; i++) {
-        if (state[i].productID === action.payload) {
-          state.splice(i, 1);
-          return state;
+        if (state[i].productID !== action.payload) {
+          array.push(state[i]);
         }
       }
-      break;
+      return array;
     }
     case "INCREASE": {
       for (let i = 0; i < state.length; i++) {

@@ -1,10 +1,12 @@
 import React, { useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { CartContext } from "../CartContext";
 import { dataContext } from "../DataContext";
 
 const Cart = () => {
   const [reRender, setReRender] = useState(false);
   const data = useContext(dataContext);
+  const navigate = useNavigate();
 
   const {
     items,
@@ -84,9 +86,11 @@ const Cart = () => {
       </ul>
 
       <h3>Total: {totalAmount()}</h3>
+
       <button
         onClick={() => {
           checkout();
+          navigate("/");
           setReRender(!reRender);
         }}
       >
