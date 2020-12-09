@@ -8,3 +8,21 @@ body {
 * {
   font-family: "Ubuntu", sans-serif;
 }
+
+@media screen and (min-width: 480px) {
+  .cartRoot {
+    width: 100%;
+  }
+  .imgLoad {
+    height: 280px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .cartRoot {
+    width: 50%;
+    margin: auto;
+  }
+  .imgLoad {
+    height: 400px;
+  }
+}

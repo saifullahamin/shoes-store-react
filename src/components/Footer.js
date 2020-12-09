@@ -31,8 +31,9 @@ const Footer = () => {
           target="_blank"
           className={classes.name}
         >
-          Saifullah Amin {<GitHubIcon />}
-        </a>
+          Saifullah Amin
+        </a>{" "}
+        {<GitHubIcon />}
       </footer>
     </div>
   );

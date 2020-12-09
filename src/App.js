@@ -35,7 +35,7 @@ function App() {
         "The Nike Blazer Mid '77 Infinite toughens up the old-school, b-ball icon that has become the go-to of the streets. Durable rubber details on the toe, heel and side let you take it where you want, day in and day out, while the piping and distorted Swoosh logo add a modern touch.",
     },
     "zoom-freak-2-naija-basketball-shoe": {
-      name: "Zoom Freak 2 Naija",
+      name: "Zoom Freak",
       img: img2,
       img2: img2b,
       price: 120,
@@ -43,7 +43,7 @@ function App() {
         "The Zoom Freak 2 Naija nods to Nigeria—the homeland of Giannis's parents—where football is a uniting force for boundless potential, youthful exuberance and infectious charisma. Giannis's late father, Charles, bonded with his sons through the beautiful game, furthering Giannis's own passion for the sport. This bright-hued homage nods to that connection by dressing the silhouette in the same colours and textures that grace the kits of the Nigerian national team. The result perfectly encapsulates the spirit of Naija: audacious, fast, fun and stylish.",
     },
     "air-zoom-superrep-hiit-class-shoe": {
-      name: "Nike Air Zoom SuperRep",
+      name: "Nike Air",
       img: img3,
       img2: img3b,
       price: 90,
@@ -51,7 +51,7 @@ function App() {
         "The Nike Air Zoom SuperRep is designed for circuit training, HIIT, short runs and other fast-paced exercise. Zoom Air cushioning in the forefoot combines with a wide, supportive heel to keep you moving and lifting comfortably.",
     },
     "metcon-5-training-shoe": {
-      name: "Nike Metcon 5",
+      name: "Nike Metcon",
       img: img4,
       img2: img4b,
       price: 130,
@@ -59,7 +59,7 @@ function App() {
         "The Nike Metcon 5 is our most tuned Metcon yet. This means specific stability for heavy lifting, traction made for speed and durability where you need it. It even includes a Hyperlift insert that's compatible with all prior versions of the Metcon. Meet your secret weapon for weight-lifting and high-impact training.",
     },
     "custom-nike-alpha-huarache-elite": {
-      name: "Nike Alpha Huarache",
+      name: "Nike Alpha",
       img: img5,
       img2: img5b,
       price: 150,
@@ -67,7 +67,7 @@ function App() {
         "The Nike Alpha Huarache brings a breathable design to the high-heat, fast pace of indoor cycling. Adjustable straps secure your foot during intense movement as you push forwards.",
     },
     "react-phantom-run-flyknit": {
-      name: "Nike React Phantom Run",
+      name: "Nike React",
       img: img6,
       img2: img6b,
       price: 120,

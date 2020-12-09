@@ -65,7 +65,13 @@ const Home = (props) => {
 
                 <Grid item xs={12} sm={8}>
                   <Paper className={classes.paper}>
-                    <img className={classes.image} src={img2} alt={name}></img>
+                    <div className={"imgLoad"}>
+                      <img
+                        className={classes.image}
+                        src={img2}
+                        alt={name}
+                      ></img>
+                    </div>
                   </Paper>
                 </Grid>
               </Grid>

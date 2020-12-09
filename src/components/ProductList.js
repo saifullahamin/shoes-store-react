@@ -48,6 +48,9 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 20,
     marginTop: 50,
   },
+  ul: {
+    paddingLeft: 25,
+  },
 }));
 
 const ProductList = () => {
@@ -68,7 +71,7 @@ const ProductList = () => {
   return (
     <div className={classes.root}>
       <h1 className={classes.heading}>Products</h1>
-      <ul>
+      <ul className={classes.ul}>
         <Grid container spacing={3} className={classes.grid}>
           {Object.entries(data).map(([productID, { name, img2, price }]) => {
             return (
