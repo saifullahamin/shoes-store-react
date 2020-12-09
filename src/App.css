@@ -13,8 +13,15 @@ body {
   .cartRoot {
     width: 100%;
   }
+}
+@media screen and (max-width: 500px) {
   .imgLoad {
-    height: 280px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .imgLoad {
+    height: 340px;
   }
 }
 @media screen and (min-width: 900px) {
