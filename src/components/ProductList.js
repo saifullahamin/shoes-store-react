@@ -13,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     textAlign: "center",
     marginBottom: 70,
+    maxWidth: "100%",
   },
   paper: {
     padding: theme.spacing(2),

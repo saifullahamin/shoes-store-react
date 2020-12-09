@@ -37,7 +37,6 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 600,
     fontSize: 60,
     borderRadius: 15,
-    backgroundColor: "rgb(255, 255, 255)",
     fontFamily: "'Sacramento', cursive",
     fontStyle: "italic",
     opacity: 0.7,
