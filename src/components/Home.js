@@ -5,6 +5,7 @@ import { dataContext } from "../DataContext";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
+import { useNavigate } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,24 +32,28 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "100%",
   },
   shop: {
-    marginTop: 60,
-    marginBottom: 70,
-    padding: "10px 0px",
     fontWeight: 600,
     fontSize: 60,
-    borderRadius: 15,
     fontFamily: "'Sacramento', cursive",
     fontStyle: "italic",
     opacity: 0.7,
+    "&:hover": {
+      cursor: "pointer",
+    },
   },
   list: {
     listStyleType: "none",
+  },
+  div: {
+    marginTop: 60,
+    marginBottom: 70,
   },
 }));
 
 const Home = (props) => {
   const data = useContext(dataContext);
   const classes = useStyles();
+  const navigate = useNavigate();
 
   return (
     <div className={classes.root}>
@@ -79,7 +84,16 @@ const Home = (props) => {
           );
         })}
       </Carousel>
-      <p className={classes.shop}>Lets Shop!</p>
+      <div className={classes.div}>
+        <span
+          onClick={() => {
+            navigate("products");
+          }}
+          className={classes.shop}
+        >
+          Lets Shop!
+        </span>
+      </div>
     </div>
   );
 };
