@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "100%",
   },
   shop: {
-    marginTop: 70,
+    marginTop: 60,
     marginBottom: 70,
     padding: "10px 0px",
     fontWeight: 600,
