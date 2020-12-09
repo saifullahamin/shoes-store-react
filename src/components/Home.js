@@ -5,8 +5,6 @@ import { dataContext } from "../DataContext";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import Button from "@material-ui/core/Button";
-import { useNavigate } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -17,13 +15,13 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 2,
     paddingTop: 50,
     paddingBottom: 20,
-    borderBottom: "3px solid rgb(235, 235, 224)",
-    backgroundColor: "rgb(252, 252, 252)",
+    borderBottom: "3px solid rgb(220, 220, 220)",
+    backgroundColor: "rgb(255, 255, 255)",
   },
   paper: {
     padding: theme.spacing(2),
     textAlign: "center",
-    backgroundColor: "rgb(252, 252, 252)",
+    backgroundColor: "rgb(255, 255, 255)",
     boxShadow: "0 0",
     fontStyle: "italic",
     fontWeight: "light",
@@ -32,12 +30,17 @@ const useStyles = makeStyles((theme) => ({
   image: {
     maxWidth: "100%",
   },
-  button: {
-    marginTop: 50,
+  shop: {
+    marginTop: 70,
     marginBottom: 70,
-    padding: "10px 30px",
-    fontWeight: 900,
-    fontSize: 20,
+    padding: "10px 0px",
+    fontWeight: 600,
+    fontSize: 60,
+    borderRadius: 15,
+    backgroundColor: "rgb(255, 255, 255)",
+    fontFamily: "'Sacramento', cursive",
+    fontStyle: "italic",
+    opacity: 0.7,
   },
   list: {
     listStyleType: "none",
@@ -47,11 +50,11 @@ const useStyles = makeStyles((theme) => ({
 const Home = (props) => {
   const data = useContext(dataContext);
   const classes = useStyles();
-  const navigate = useNavigate();
+
   return (
     <div className={classes.root}>
       <Carousel className={classes.corousal}>
-        {Object.entries(data).map(([productID, { name, img }]) => {
+        {Object.entries(data).map(([productID, { name, img2 }]) => {
           return (
             <li key={productID} className={classes.list}>
               <Grid container spacing={3}>
@@ -63,7 +66,7 @@ const Home = (props) => {
 
                 <Grid item xs={12} sm={8}>
                   <Paper className={classes.paper}>
-                    <img className={classes.image} src={img} alt={name}></img>
+                    <img className={classes.image} src={img2} alt={name}></img>
                   </Paper>
                 </Grid>
               </Grid>
@@ -71,13 +74,7 @@ const Home = (props) => {
           );
         })}
       </Carousel>
-      <Button
-        className={classes.button}
-        variant="outlined"
-        onClick={() => navigate("products")}
-      >
-        Let's Shop!
-      </Button>
+      <p className={classes.shop}>Lets Shop!</p>
     </div>
   );
 };

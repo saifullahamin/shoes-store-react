@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     backgroundColor: "rgb(255,255,255)",
     borderTop: "3px solid rgb(235, 235, 224)",
+    padding: 5,
   },
   name: {
     color: "black",
@@ -22,8 +23,8 @@ const Footer = () => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <p>
-        Made by{" "}
+      <footer className={classes.footer}>
+        Made with ❤️ by{" "}
         <a
           href="https://github.com/saifullahamin"
           // eslint-disable-next-line react/jsx-no-target-blank
@@ -32,7 +33,7 @@ const Footer = () => {
         >
           Saifullah Amin {<GitHubIcon />}
         </a>
-      </p>
+      </footer>
     </div>
   );
 };

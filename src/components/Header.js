@@ -14,12 +14,8 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   title: {
-    fontFamily: "'Sacramento', cursive",
+    // fontFamily: "'Sacramento', cursive",
     flexGrow: 1,
-    color: "rgb(0,0,0)",
-    fontSize: 35,
-    fontStyle: "italic",
-    paddingTop: 7,
   },
   button: {
     color: "rgb(0,0,0)",
@@ -29,7 +25,11 @@ const useStyles = makeStyles((theme) => ({
   },
   appBar: {
     backgroundColor: "rgb(255, 255, 255)",
-    padding: "5px",
+  },
+  logo: {
+    "&:hover": {
+      cursor: "pointer",
+    },
   },
 }));
 
@@ -47,7 +47,14 @@ export default function Header() {
       <AppBar position="static" className={classes.appBar}>
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
-            Nike Shoes
+            <img
+              onClick={() => navigate("/")}
+              className={classes.logo}
+              src="https://emoji.gg/assets/emoji/nike.png"
+              width="64px"
+              height="64px"
+              alt="nike"
+            />
           </Typography>
           <Button className={classes.button} onClick={() => navigate("/")}>
             Home
