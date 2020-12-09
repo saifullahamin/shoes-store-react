@@ -16,12 +16,58 @@ body {
 }
 @media screen and (max-width: 500px) {
   .imgLoad {
+    height: 300px;
+  }
+  .imgLoad {
+    height: 300px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .imgLoad {
+    height: 340px;
+  }
+  .imgLoadP {
+    height: 300px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .imgLoadP {
+    height: 150px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .imgLoadP {
+    height: 180px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .imgLoadP {
     height: 200px;
   }
 }
-@media screen and (max-width: 900px) {
-  .imgLoad {
-    height: 340px;
+@media screen and (min-width: 900px) {
+  .imgLoadP {
+    height: 220px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .imgLoadP {
+    height: 180px;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .imgLoadP {
+    height: 230px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .imgLoadP {
+    height: 270px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .imgLoadP {
+    height: 350px;
   }
 }
 @media screen and (min-width: 900px) {

@@ -81,7 +81,13 @@ const ProductList = () => {
                     <Link to={productID} className={classes.link}>
                       <h3>{name}</h3>
                       <h3>${price}</h3>
-                      <img className={classes.img} src={img2} alt={name}></img>
+                      <div className={"imgLoadP"}>
+                        <img
+                          className={classes.img}
+                          src={img2}
+                          alt={name}
+                        ></img>
+                      </div>
                     </Link>
                     <Button
                       className={classes.button}

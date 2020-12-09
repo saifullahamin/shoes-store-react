@@ -69,16 +69,20 @@ const ProductDetails = () => {
             <hr />
             <p>{data[productID].detail}</p>
             <div className={classes.div}>
-              <img
-                src={data[productID].img2}
-                alt={productID}
-                className={classes.img}
-              ></img>
-              <img
-                src={data[productID].img}
-                alt={productID}
-                className={classes.img}
-              ></img>
+              <div className={"imgLoad"}>
+                <img
+                  src={data[productID].img2}
+                  alt={productID}
+                  className={classes.img}
+                ></img>
+              </div>
+              <div className={"imgLoad"}>
+                <img
+                  src={data[productID].img}
+                  alt={productID}
+                  className={classes.img}
+                ></img>
+              </div>
               <br />
               <Button
                 className={classes.button}
