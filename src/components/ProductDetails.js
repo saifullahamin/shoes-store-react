@@ -13,14 +13,14 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     marginBottom: 70,
   },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: "center",
-    color: theme.palette.text.secondary,
-    margin: 30,
-    borderTop: "2px solid rgb(240, 240, 240)",
-    marginTop: 0,
-  },
+  // paper: {
+  //   padding: theme.spacing(2),
+  //   textAlign: "center",
+  //   color: theme.palette.text.secondary,
+  //   margin: 30,
+  //   borderTop: "2px solid rgb(240, 240, 240)",
+  //   marginTop: 0,
+  // },
   paperX: {
     borderTop: "2px solid rgb(240, 240, 240)",
     padding: theme.spacing(2),
@@ -37,6 +37,9 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     color: "#666666",
+  },
+  div: {
+    textAlign: "center",
   },
 }));
 
@@ -65,28 +68,26 @@ const ProductDetails = () => {
             <h2>${data[productID].price}</h2>
             <hr />
             <p>{data[productID].detail}</p>
-          </Paper>
-        </Grid>
-        <Grid item sm={12}>
-          <Paper className={classes.paper}>
-            <img
-              src={data[productID].img2}
-              alt={productID}
-              className={classes.img}
-            ></img>
-            <img
-              src={data[productID].img}
-              alt={productID}
-              className={classes.img}
-            ></img>
-            <br />
-            <Button
-              className={classes.button}
-              onClick={() => handleAddition(productID)}
-              variant="outlined"
-            >
-              Add to Cart
-            </Button>
+            <div className={classes.div}>
+              <img
+                src={data[productID].img2}
+                alt={productID}
+                className={classes.img}
+              ></img>
+              <img
+                src={data[productID].img}
+                alt={productID}
+                className={classes.img}
+              ></img>
+              <br />
+              <Button
+                className={classes.button}
+                onClick={() => handleAddition(productID)}
+                variant="outlined"
+              >
+                Add to Cart
+              </Button>
+            </div>
           </Paper>
         </Grid>
       </Grid>
