@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     color: "#666666",
-    marginTop: 15,
+    marginTop: 5,
   },
   div: {
     textAlign: "center",
