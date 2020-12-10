@@ -11,12 +11,13 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     textAlign: "center",
+    marginTop: 100,
   },
   corousal: {
     marginTop: 2,
     paddingTop: 50,
     paddingBottom: 20,
-    borderBottom: "3px solid rgb(220, 220, 220)",
+    borderBottom: "2px solid rgb(235, 235, 224)",
     backgroundColor: "rgb(255, 255, 255)",
   },
   paper: {

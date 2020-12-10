@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 60,
     opacity: 0.6,
     marginBottom: 20,
-    marginTop: 50,
+    marginTop: 130,
   },
   empty: {
     fontFamily: "'Sacramento', cursive",
@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 60,
     opacity: 0.6,
     marginBottom: 20,
-    marginTop: 50,
+    marginTop: 130,
     textAlign: "center",
   },
   count: {

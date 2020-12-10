@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     marginBottom: 70,
+    marginTop: 80,
   },
   // paper: {
   //   padding: theme.spacing(2),
@@ -37,6 +38,7 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     color: "#666666",
+    marginTop: 15,
   },
   div: {
     textAlign: "center",

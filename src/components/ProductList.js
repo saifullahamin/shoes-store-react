@@ -14,14 +14,16 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     marginBottom: 70,
     maxWidth: "100%",
+    marginTop: 130,
   },
   paper: {
+    border: "2px solid rgb(235, 235, 224)",  
     padding: theme.spacing(2),
     textAlign: "center",
     color: theme.palette.text.secondary,
     margin: 20,
     "&:hover": {
-      backgroundColor: "rgb(245,245,245)",
+      backgroundColor: "rgb(250,250,250)",
     },
   },
   list: {
@@ -75,7 +77,7 @@ const ProductList = () => {
         <Grid container spacing={3} className={classes.grid}>
           {Object.entries(data).map(([productID, { name, img2, price }]) => {
             return (
-              <Grid item xs={12} sm={6} md={4} >
+              <Grid item xs={12} sm={6} md={4}>
                 <li key={productID} className={classes.list}>
                   <Paper className={classes.paper}>
                     <Link to={productID} className={classes.link}>
