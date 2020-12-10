@@ -75,7 +75,7 @@ const ProductList = () => {
         <Grid container spacing={3} className={classes.grid}>
           {Object.entries(data).map(([productID, { name, img2, price }]) => {
             return (
-              <Grid item xs={12} sm={6} md={4}>
+              <Grid item xs={12} sm={6} md={4} >
                 <li key={productID} className={classes.list}>
                   <Paper className={classes.paper}>
                     <Link to={productID} className={classes.link}>
