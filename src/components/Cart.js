@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { CartContext } from "../CartContext";
+import { cartContext } from "../CartContext";
 import { dataContext } from "../DataContext";
 
 import Button from "@material-ui/core/Button";
@@ -82,7 +82,7 @@ const Cart = () => {
     increaseItem,
     decreaseItem,
     checkout,
-  } = useContext(CartContext);
+  } = useContext(cartContext);
 
   const handleDecrease = (event) => {
     let equalOne = false;

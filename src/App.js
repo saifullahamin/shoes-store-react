@@ -10,7 +10,7 @@ import {
   Footer,
 } from "./components";
 import { dataContext } from "./DataContext";
-import { CartProvider } from "./CartContext";
+import { CartProvider } from "./CartProvider";
 import img1 from "./images/1.png";
 import img2 from "./images/2.png";
 import img3 from "./images/3.png";

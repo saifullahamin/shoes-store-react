@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { dataContext } from "../DataContext";
-import { CartContext } from "../CartContext";
+import { cartContext } from "../CartContext";
 
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
@@ -58,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
 const ProductList = () => {
   const data = useContext(dataContext);
   const classes = useStyles();
-  const { addItem, items } = useContext(CartContext);
+  const { addItem, items } = useContext(cartContext);
 
   const handleAddition = (event) => {
     if (!items.find((item) => item.productID === event)) {

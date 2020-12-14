@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import { CartContext } from "../CartContext";
+import { cartContext } from "../CartContext";
 
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
@@ -13,7 +13,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     position: "fixed",
-    // left: 0,
     top: 0,
     width: "100%",
     zIndex: 2,
@@ -40,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Header() {
   const classes = useStyles();
   const navigate = useNavigate();
-  const { items } = useContext(CartContext);
+  const { items } = useContext(cartContext);
   const cartItems = () => {
     if (items.length > 0) {
       return items.length;
