@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { dataContext } from "../DataContext";
-import { CartContext } from "../CartContext";
+import { cartContext } from "../CartContext";
 
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
@@ -14,14 +14,6 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 70,
     marginTop: 80,
   },
-  // paper: {
-  //   padding: theme.spacing(2),
-  //   textAlign: "center",
-  //   color: theme.palette.text.secondary,
-  //   margin: 30,
-  //   borderTop: "2px solid rgb(240, 240, 240)",
-  //   marginTop: 0,
-  // },
   paperX: {
     borderTop: "2px solid rgb(240, 240, 240)",
     padding: theme.spacing(2),
@@ -47,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
 const ProductDetails = () => {
   const data = useContext(dataContext);
   const classes = useStyles();
-  const { addItem, items } = useContext(CartContext);
+  const { addItem, items } = useContext(cartContext);
 
   const handleAddition = (event) => {
     if (!items.find((item) => item.productID === event)) {
